@@ -4,7 +4,7 @@ A premium single-page hero portfolio built with Next.js, Tailwind CSS, GSAP, and
 
 ## Demo
 
-![Rubix Cube 3D Portfolio Demo](public/demo-hero.svg)
+![Rubix Cube 3D Portfolio Demo](public/demo.png)
 
 ## Tech Stack
 
