@@ -176,7 +176,7 @@ export default function Home() {
               Zwingli Savanarola
             </h1>
             <p className="text-xl font-semibold text-black/80 sm:text-2xl">
-              A Full Stack Web Developer
+              A Software Engineer
             </p>
 
             <div className="hero-cta space-y-4 pt-5">
