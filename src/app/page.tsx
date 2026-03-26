@@ -92,22 +92,18 @@ export default function Home() {
       />
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_85%_20%,rgba(255,255,255,0.24)_0%,transparent_42%)]" />
 
-      {/* --- 2. THE FULLSCREEN 3D OCEAN (Moved out of the grid) --- */}
-      <div
-        id="hero-cube-container"
-        className="absolute -bottom-16 -left-16 -right-16 -top-16 z-0"
-      >
+      {/* --- 2. THE 3D CANVAS LAYER (EDGE BLEED) --- */}
+      <div id="hero-cube-container" className="absolute -bottom-20 -left-16 -right-20 -top-16 z-0">
         <Spline
           scene="https://prod.spline.design/u94Yadrq5qprTstw/scene.splinecode"
           className="h-full w-full"
         />
       </div>
 
-      {/* --- 3. THE UI LAYER (Floating on top) --- */}
-      {/* pointer-events-none lets the mouse click "through" the empty space to the 3D canvas */}
-      <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-325 flex-col px-5 pb-20 pt-5 sm:px-8 lg:px-12 pointer-events-none">
+      {/* --- 3. THE UI LAYER --- */}
+      <div className="pointer-events-none relative z-10 mx-auto flex min-h-screen w-full max-w-450 flex-col px-6 pb-20 pt-5 sm:px-10 lg:px-20">
         
-        {/* HEADER: pointer-events-auto turns clicking back ON for the nav */}
+        {/* HEADER */}
         <header className="hero-nav pointer-events-auto flex items-center justify-between rounded-2xl border border-black/10 bg-black/5 px-4 py-3 backdrop-blur-sm">
           <div className="flex items-center gap-3">
             <div className="grid size-10 place-items-center rounded-full border border-black/30 bg-black/85 text-sm font-black tracking-wide text-orange-300">
@@ -167,9 +163,9 @@ export default function Home() {
           </div>
         </header>
 
-        <main className="grid flex-1 grid-cols-1 items-center gap-10 py-8 lg:grid-cols-[1fr_1.15fr] lg:gap-8">
+        <main className="grid flex-1 grid-cols-1 items-center gap-10 py-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
           
-          {/* LEFT COLUMN: pointer-events-auto turns clicking back ON for your links */}
+          {/* LEFT COLUMN */}
           <div className="hero-copy pointer-events-auto max-w-xl space-y-4 text-[#121212]">
             <p className="text-2xl font-semibold tracking-tight text-black/75">Hi, I am</p>
             <h1 className="text-6xl font-black uppercase leading-[0.9] tracking-tight text-[#0c0c0c] sm:text-7xl lg:text-8xl">
@@ -218,16 +214,10 @@ export default function Home() {
               </div>
             </div>
           </div>
-
-          {/* RIGHT COLUMN: The Empty Window */}
-          {/* We keep this here to push the text to the left, but we leave it empty so we can see the 3D cube through it. */}
-          <div className="flex h-full min-h-[500px] w-full items-center justify-center">
-             {/* The Spline canvas is swimming behind this empty space now! */}
-          </div>
           
         </main>
 
-        {/* SCROLL INDICATOR: pointer-events-auto turns clicking back ON */}
+        {/* SCROLL INDICATOR */}
         <div className="pointer-events-auto absolute bottom-5 left-1/2 -translate-x-1/2">
           <div className="flex flex-col items-center gap-2 text-black/70">
             <div className="relative h-11 w-7 rounded-full border-2 border-black/40 bg-white/20">

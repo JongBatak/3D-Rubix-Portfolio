@@ -34,3 +34,4 @@ Then open [http://localhost:3000](http://localhost:3000).
 
 - This repository currently focuses on the first (hero) section.
 - Background and motion are optimized for a premium energetic visual style with strong text readability.
+- This repository is not permitted to be used for commercial nor personal distribution use (except for ideas, layout, and inspiration)
