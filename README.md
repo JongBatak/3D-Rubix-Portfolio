@@ -1,6 +1,6 @@
 # Rubix Cube 3D Portfolio
 
-A premium single-page hero portfolio built with Next.js, Tailwind CSS, GSAP, and Spline.
+A premium single-page hero portfolio built with Next.js, Tailwind CSS, GSAP, and Spline. still (at 5% completion)
 
 ## Demo
 
